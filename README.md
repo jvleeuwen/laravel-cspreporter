@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jvleeuwen/laravel-cspreporter.svg?branch=master)](https://travis-ci.org/jvleeuwen/laravel-cspreporter)
+
 # CSPreporter Laravel Package
 
 ## Installation
