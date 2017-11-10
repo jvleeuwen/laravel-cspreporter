@@ -40,6 +40,11 @@ class ActueelTest extends TestCase
         $this->assertInternalType('array', $this->feed->ParseRss($this->feed->file($this->file)));
     }
 
+    /** @test */
+    public function it_can_run_the_full_cycle()
+    {
+        $this->assertInternalType('array', $this->feed->ParseRss($this->feed->uri($this->file)));
+    }
     // public function testUpdateOrInsertRssItemInToDatabase()
     // {
     //  $this->markTestIncomplete('This test has not been implemented yet.');

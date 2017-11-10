@@ -12,21 +12,14 @@ class Cspreporter
         //
     }
 
-    public function test()
-    {
-        $this->feed = 'blaat';
-
-        return $this->feed;
-    }
-
-    public function uri(string $rssUri)
+    public function uri($rssUri)
     {
         // Gets the RSS from the $rssUri
         try {
             $feed = simplexml_load_file($rssUri);
-            if ($feed) {
+            // if ($feed) {
                 return $this->ParseRss(simplexml_load_string($feed));
-            }
+            // }
         } catch (\Exception $e) {
             //catch code
         }
