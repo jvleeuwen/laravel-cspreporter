@@ -51,7 +51,7 @@ class ActueelTest extends TestCase
     /** @test */
     public function it_can_not_parse_uri_feed()
     {
-        $this->assertSame("invalid XML",$this->feed->uri("i dont exist"));
+        $this->assertSame('invalid XML', $this->feed->uri('i dont exist'));
     }
 
     // public function testUpdateOrInsertRssItemInToDatabase()
