@@ -26,3 +26,7 @@ $ composer require jvleeuwen/laravel-cspreporter
 ## License
 
 This package is licensed under [The MIT License (MIT)](LICENSE).
+
+## Instructions
+
+Will be added later.
