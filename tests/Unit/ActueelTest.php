@@ -15,17 +15,17 @@ class ActueelTest extends TestCase
      * @return void
      */
 
-    // public function setUp()
-    // {
-    //     parent::setUp();
-    //     // $this->feed = Cspreporter::file();
-    // }
+    public function setUp()
+    {
+        parent::setUp();
+        $this->feed = new Cspreporter();
+    }
 
     public function testGetRSS()
     {
-        // Cspreporter::file('Tests/actueel.xml');
-        $feed = new Cspreporter();
-        $this->assertSame('blaat', $feed->test());
+        // Cspreporter::file('test/actueel.xml');
+        
+        $this->assertSame('blaat', $this->feed->test());
         // $this->markTestIncomplete('This test has not been implemented yet.');
     }
 
