@@ -1,28 +1,96 @@
 <?xml version="1.0"?><rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom' xmlns:cf='http://www.microsoft.com/schemas/rss/core/2005' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:sy='http://purl.org/rss/1.0/modules/syndication/' xmlns:admin='http://webns.net/mvcb/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:content='http://purl.org/rss/1.0/modules/content/'>
-	<channel>
-	    <title>CSP Reporter (0)</title>
-		<debug>1510151082</debug>
-	    <link>http://www.cspreporter.nl/</link>
-	    <description>Overzicht van actueel meldingen binnen het netwerk van RoutIT</description>
-	    <language>nl-nl</language>
-	    <pubDate>Wed, 13 Feb 2013 22:12:48 GMT</pubDate>
-	    <lastBuildDate>Fri, 19 Feb 2013 22:12:48 GMT</lastBuildDate>
-	    <generator>E-heroes App Feeder</generator>
-	    <managingEditor>support@routit.nl</managingEditor>
-	    <webMaster>info@routit.nl</webMaster>
-	 	<ttl>10</ttl>
-		<item id="1234">
-			<title>titel</title>
-			<link>http://link.com</link>
-			<description><![CDATA[description]]></description>
-			<pubDate>Mon, 01 Jan 2017 00:00:00 +0000</pubDate>
-			<startDate>2017-01-01 00:00:00</startDate>
-			<endDate>2017-01-01 00:00:00</endDate>
-			<category>storingen</category>
-			<services>
-				<service id="1234"><![CDATA[serviceName1]]></service>
-				<service id="1235"><![CDATA[serviceName2]]></service>
-			</services>
+  <channel>
+    <title>CSP Reporter (0)</title>
+	<debug>1510317284</debug>
+    <link>http://www.cspreporter.nl/</link>
+    <description>Overzicht van actueel meldingen binnen het netwerk van RoutIT</description>
+    <language>nl-nl</language>
+    <pubDate>Wed, 13 Feb 2013 22:12:48 GMT</pubDate>
+    <lastBuildDate>Fri, 19 Feb 2013 22:12:48 GMT</lastBuildDate>
+    <generator>E-heroes App Feeder</generator>
+    <managingEditor>support@routit.nl</managingEditor>
+    <webMaster>info@routit.nl</webMaster>
+ 	<ttl>10</ttl>
+
+			<item id="8289">
+		  <title>Beheer Portal</title>
+		  <link>http://cspreporter.nl/werkzaamheden/beheer-portal-12/</link>
+		  <description><![CDATA[ <p>Op zondag 12 november 2017 van 0:01 uur tot zondag 12 november 2017 05:00 uur worden er werkzaamheden uitgevoerd aan de Beheer Portal.<br />
+Gedurende het onderhoudswindow zijn simkaartblokkeringen, sim swaps en het wijzigen of inzien van limieten en gespreksdetails niet beschikbaar.<br />
+De verbruiksdetails ten behoeve van blokkeer- en waarschuwingslimieten worden in de onderhoudsperiode niet bijgewerkt.<br />
+Voor het blokkeren van simkaarten kunt u telefonisch contact opnemen met 247Services.</p>
+ ]]></description>
+		  <pubDate>Mon, 06 Nov 2017 09:56:51 +0000</pubDate>
+		  <startDate>2017-11-12 00:01:00</startDate>
+		  <endDate>2017-11-12 05:00:00</endDate>
+		  <category>werkzaamheden</category>
+		  <services>
+			<service id="42"><![CDATA[Beheer Portal]]></service><service id="37"><![CDATA[Mobiel]]></service><service id="38"><![CDATA[Zakelijk mobiel]]></service>		  </services>
 		</item>
-	</channel>
+				<item id="8265">
+		  <title>KPN verbindingen</title>
+		  <link>http://cspreporter.nl/werkzaamheden/kpn-verbindingen/</link>
+		  <description><![CDATA[ <p>Op woensdag 15 november 2017 van 0.01 uur tot 7.00 uur wordt er onderhoud uitgevoerd door KPN. KPN migreert in deze nacht de hardware naar een andere locatie binnen het Telecity datacenter. Deze hardware is verantwoordelijke voor alle typen verbindingen.</p>
+<p>Vanwege de redundante uitvoering wordt er geen downtime verwacht. Onze engineers monitoren de migratie.</p>
+ ]]></description>
+		  <pubDate>Fri, 27 Oct 2017 08:54:27 +0000</pubDate>
+		  <startDate>2017-11-15 00:01:00</startDate>
+		  <endDate>2017-11-15 07:00:00</endDate>
+		  <category>werkzaamheden</category>
+		  <services>
+			<service id="21"><![CDATA[Connectivity]]></service><service id="28"><![CDATA[KPN Fiber (FTTO, WEAS)]]></service><service id="25"><![CDATA[KPN FttH]]></service><service id="26"><![CDATA[KPN WOK]]></service><service id="27"><![CDATA[KPN xDSL]]></service>		  </services>
+		</item>
+				<item id="8375">
+		  <title>Telefonie platform</title>
+		  <link>http://cspreporter.nl/werkzaamheden/telefonie-platform-80/</link>
+		  <description><![CDATA[ <p>Op woensdag 15 november van 23:00 uur  23:30 uur  wordt er onderhoud uitgevoerd aan het telefonie platform.</p>
+<p>Vanwege de redundante opbouw van het Telefonie Platform, hebben de werkzaamheden geen impact op de beschikbaarheid van de dienst.</p>
+ ]]></description>
+		  <pubDate>Fri, 10 Nov 2017 08:11:39 +0000</pubDate>
+		  <startDate>2017-11-15 23:00:00</startDate>
+		  <endDate>2017-11-15 23:30:00</endDate>
+		  <category>werkzaamheden</category>
+		  <services>
+			<service id="53"><![CDATA[HIP]]></service><service id="65"><![CDATA[KPN EEN]]></service><service id="52"><![CDATA[VoIP]]></service>		  </services>
+		</item>
+				<item id="8373">
+		  <title>IRMA</title>
+		  <link>http://cspreporter.nl/werkzaamheden/irma-81/</link>
+		  <description><![CDATA[ <p>Op donderdag 16 november 2017 tussen 21:00 uur en 0:00 uur wordt er onderhoud uitgevoerd aan IRMA.<br />
+Tijdens het onderhoud zullen alle actieve sessies met IRMA worden verbroken.<br />
+IRMA is direct na de update weer beschikbaar.</p>
+<p>Wij adviseren u wijzigingen in IRMA op te slaan voordat de update wordt uitgevoerd.<br />
+Voor vragen of opmerkingen met betrekking tot dit bericht kunt u contact opnemen.</p>
+ ]]></description>
+		  <pubDate>Fri, 10 Nov 2017 08:08:52 +0000</pubDate>
+		  <startDate>2017-11-16 21:00:00</startDate>
+		  <endDate>2017-11-16 23:59:00</endDate>
+		  <category>werkzaamheden</category>
+		  <services>
+			<service id="102"><![CDATA[Bestellen]]></service><service id="71"><![CDATA[Cloud portal]]></service><service id="99"><![CDATA[DNS beheertool]]></service><service id="40"><![CDATA[IRMA]]></service><service id="114"><![CDATA[IS/RA check]]></service><service id="58"><![CDATA[Leveren]]></service><service id="100"><![CDATA[Porteren mobiel]]></service><service id="101"><![CDATA[Porteren VOIP]]></service><service id="43"><![CDATA[Postcodecheck]]></service><service id="66"><![CDATA[RoutIT Kennisdatabase]]></service><service id="41"><![CDATA[RoutIT Tickets]]></service><service id="116"><![CDATA[SELT]]></service>		  </services>
+		</item>
+				<item id="8257">
+		  <title>Core Netwerk</title>
+		  <link>http://cspreporter.nl/werkzaamheden/core-netwerk-17/</link>
+		  <description><![CDATA[ <p>Van donderdag 16 november 2017 23:00 tot vrijdag 17  november 2017 02:00 uur worden er werkzaamheden uitgevoerd aan de Core infrastructuur.<br />
+Voorafgaand aan de werkzaamheden leiden engineers het dataverkeer om via alternatieve paden. Hierdoor hebben de werkzaamheden minimaal invloed op de diensten van uw klanten.</p>
+<p>Tijdens de omschakeling naar de alternatieve paden kunt u mogelijk een korte vertraging of onderbreking ervaren in datastromen (gesprekken/internet) van de volgende diensten:</p>
+<ul>
+<li>Colo BIT, TC1 en TC2</li>
+<li>Tijdservers</li>
+<li>mSSL</li>
+<li>KPN xDSL</li>
+<li>Vodafone Interconnect</li>
+<li>T-Mobile Interconnect</li>
+<li>IPVPN Datacenter</li>
+</ul>
+ ]]></description>
+		  <pubDate>Mon, 06 Nov 2017 08:24:58 +0000</pubDate>
+		  <startDate>2017-11-16 23:00:00</startDate>
+		  <endDate>2017-11-17 02:00:00</endDate>
+		  <category>werkzaamheden</category>
+		  <services>
+			<service id="11"><![CDATA[Colodiensten]]></service><service id="107"><![CDATA[Core Network]]></service><service id="45"><![CDATA[IP-VPN]]></service><service id="27"><![CDATA[KPN xDSL]]></service><service id="22"><![CDATA[Mobile Interconnect]]></service><service id="50"><![CDATA[mSSL]]></service>		  </services>
+		</item>
+		  </channel>
 </rss>

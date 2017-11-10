@@ -32,11 +32,11 @@ class Cspreporter
         }
     }
 
-    public function file()
+    public function file($filename)
     {
-        $xml = simplexml_load_file(file_get_contents($filename));
-
-        return $this->ParseRss($xml);
+        $file = simplexml_load_file($filename)->asXML();
+        $xml = simplexml_load_string($file);
+        return $xml;
     }
 
     public function ParseRss($feed)
