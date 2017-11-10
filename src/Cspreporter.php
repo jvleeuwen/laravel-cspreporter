@@ -18,7 +18,6 @@ class Cspreporter
                 return $this->ParseRss(simplexml_load_string($feed));
             }
         } catch (\Exception $e) {
-            //catch code
             Log::warning($e);
             return 'invalid XML';
         }
