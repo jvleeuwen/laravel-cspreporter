@@ -34,21 +34,6 @@ class ActueelTest extends TestCase
         $this->assertCount(1, $this->feed->file($this->file));
     }
 
-    // /** @test */
-    // public function it_can_parse_channel_values()
-    // {
-    //     $this->assertSame('CSP Reporter (0)', (string)$this->xml->channel->title);
-    //     $this->assertSame('http://www.cspreporter.nl/', (string)$this->xml->channel->link);
-    //     $this->assertSame('Overzicht van actueel meldingen binnen het netwerk van RoutIT', (string)$this->xml->channel->description);
-    //     $this->assertSame('nl-nl', (string)$this->xml->channel->language);
-    //     $this->assertSame('Wed, 13 Feb 2013 22:12:48 GMT', (string)$this->xml->channel->pubDate);
-    //     $this->assertSame('Fri, 19 Feb 2013 22:12:48 GMT', (string)$this->xml->channel->lastBuildDate);
-    //     $this->assertSame('E-heroes App Feeder', (string)$this->xml->channel->generator);
-    //     $this->assertSame('support@routit.nl', (string)$this->xml->channel->managingEditor);
-    //  $this->assertSame('info@routit.nl', (string)$this->xml->channel->webMaster);
-    //     $this->assertSame(10, (int)$this->xml->channel->ttl);
-    // }
-
     /** @test */
     public function it_can_parse_rss()
     {
@@ -64,4 +49,20 @@ class ActueelTest extends TestCase
     // {
     //  $this->markTestIncomplete('This test has not been implemented yet.');
     // }
+
+    // /** @test */
+    // public function it_can_parse_channel_values()
+    // {
+    //     $this->assertSame('CSP Reporter (0)', (string)$this->xml->channel->title);
+    //     $this->assertSame('http://www.cspreporter.nl/', (string)$this->xml->channel->link);
+    //     $this->assertSame('Overzicht van actueel meldingen binnen het netwerk van RoutIT', (string)$this->xml->channel->description);
+    //     $this->assertSame('nl-nl', (string)$this->xml->channel->language);
+    //     $this->assertSame('Wed, 13 Feb 2013 22:12:48 GMT', (string)$this->xml->channel->pubDate);
+    //     $this->assertSame('Fri, 19 Feb 2013 22:12:48 GMT', (string)$this->xml->channel->lastBuildDate);
+    //     $this->assertSame('E-heroes App Feeder', (string)$this->xml->channel->generator);
+    //     $this->assertSame('support@routit.nl', (string)$this->xml->channel->managingEditor);
+    //  $this->assertSame('info@routit.nl', (string)$this->xml->channel->webMaster);
+    //     $this->assertSame(10, (int)$this->xml->channel->ttl);
+    // }
+
 }
