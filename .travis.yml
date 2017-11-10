@@ -1,7 +1,3 @@
-env:
-  global:
-    - CC_TEST_REPORTER_ID=CODECLIMATE_REPO_TOKEN
-
 language: php
 
 php:
