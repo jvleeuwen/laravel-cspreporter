@@ -43,7 +43,15 @@ class ActueelTest extends TestCase
     /** @test */
     public function it_can_run_the_full_cycle()
     {
-        $this->assertInternalType('array', $this->feed->ParseRss($this->feed->uri($this->file)));
+        // $this->assertInternalType('array', $this->feed->ParseRss($this->feed->uri($this->file)));
+        $this->assertInternalType('array', $this->feed->uri($this->file));
+        // $this->assertGreaterThan(0, $this->feed->ParseRss($this->feed->uri($this->file)));
+    }
+
+    /** @test */
+    public function it_can_not_parse_uri_feed()
+    {
+        $this->assertSame("invalid XML",$this->feed->uri("i dont exist"));
     }
     // public function testUpdateOrInsertRssItemInToDatabase()
     // {

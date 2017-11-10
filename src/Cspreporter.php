@@ -2,26 +2,25 @@
 
 namespace Jvleeuwen\Cspreporter;
 
+use Illuminate\Support\Facades\Log;
+
 class Cspreporter
 {
     protected $rssUri;
     protected $feed;
 
-    public function __construct()
-    {
-        //
-    }
-
     public function uri($rssUri)
     {
         // Gets the RSS from the $rssUri
         try {
-            $feed = simplexml_load_file($rssUri);
-            // if ($feed) {
+            $feed = simplexml_load_file($rssUri)->asXML();
+            if ($feed) {
                 return $this->ParseRss(simplexml_load_string($feed));
-            // }
+            }
         } catch (\Exception $e) {
             //catch code
+            Log::warning($e);
+            return 'invalid XML';
         }
     }
 
@@ -52,7 +51,7 @@ class Cspreporter
             */
             foreach ($feed->channel->item as $item) {
                 $rssItem = [
-                    'id' 			=> $item->attributes()->id,
+                    // 'id' 			=> $item->attributes()->id,
                     'title' 		=> $item->title,
                     'description'	=> $item->description,
                     'pubDate'		=> $item->pubDate,
@@ -63,7 +62,6 @@ class Cspreporter
                 ];
                 array_push($feedArray, $rssItem);
             }
-
             return $feedArray;
         }
     }
