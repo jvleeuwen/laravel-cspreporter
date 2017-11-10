@@ -18,7 +18,7 @@ class Cspreporter
         try {
             $feed = simplexml_load_file($rssUri);
             // if ($feed) {
-                return $this->ParseRss(simplexml_load_string($feed));
+            return $this->ParseRss(simplexml_load_string($feed));
             // }
         } catch (\Exception $e) {
             //catch code
