@@ -64,5 +64,4 @@ class ActueelTest extends TestCase
     //  $this->assertSame('info@routit.nl', (string)$this->xml->channel->webMaster);
     //     $this->assertSame(10, (int)$this->xml->channel->ttl);
     // }
-
 }
