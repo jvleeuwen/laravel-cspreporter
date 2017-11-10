@@ -4,6 +4,7 @@ namespace Jvleeuwen\Cspreporter\Tests\Unit;
 
 use Orchestra\Testbench\TestCase;
 use Jvleeuwen\Cspreporter\Cspreporter;
+
 // use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ActueelTest extends TestCase
@@ -13,7 +14,7 @@ class ActueelTest extends TestCase
      *
      * @return void
      */
-    
+
     // public function setUp()
     // {
     //     parent::setUp();
@@ -25,7 +26,7 @@ class ActueelTest extends TestCase
         // Cspreporter::file('Tests/actueel.xml');
         $feed = new Cspreporter();
         $this->assertSame('blaat', $feed->test());
-    	// $this->markTestIncomplete('This test has not been implemented yet.');
+        // $this->markTestIncomplete('This test has not been implemented yet.');
     }
 
     // public function testParseRssItemFields()
