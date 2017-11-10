@@ -36,6 +36,7 @@ class Cspreporter
     {
         $file = simplexml_load_file($filename)->asXML();
         $xml = simplexml_load_string($file);
+
         return $xml;
     }
 
