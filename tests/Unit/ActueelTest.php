@@ -14,7 +14,6 @@ class ActueelTest extends TestCase
      *
      * @return void
      */
-
     public function setUp()
     {
         parent::setUp();
@@ -24,7 +23,7 @@ class ActueelTest extends TestCase
     public function testGetRSS()
     {
         // Cspreporter::file('test/actueel.xml');
-        
+
         $this->assertSame('blaat', $this->feed->test());
         // $this->markTestIncomplete('This test has not been implemented yet.');
     }
