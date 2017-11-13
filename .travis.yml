@@ -18,7 +18,7 @@ script:
   - ./vendor/bin/phpunit --coverage-clover build/logs/clover.xml
 
 after_script:
-  - ./vendor/bin/test-reporter -v
+  - CODECLIMATE_REPO_TOKEN=CC_TEST_REPORTER_ID ./vendor/bin/test-reporter -v
 #  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
 after_success:
