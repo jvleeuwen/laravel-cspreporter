@@ -7,10 +7,10 @@ use Illuminate\Contracts\Container\Container;
 
 class CspreporterServiceProvider extends ServiceProvider
 {
-    public function boot()
-    {
-        //
-    }
+    // public function boot()
+    // {
+    //     //
+    // }
 
     public function register()
     {

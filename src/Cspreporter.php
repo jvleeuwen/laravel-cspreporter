@@ -21,7 +21,9 @@ class Cspreporter
             Log::warning($e);
             return 'invalid XML';
         }
+    // @codeCoverageIgnoreStart
     }
+    // @codeCoverageIgnoreEnd
 
     public function file($filename)
     {
@@ -63,5 +65,7 @@ class Cspreporter
             }
             return $feedArray;
         }
+    // @codeCoverageIgnoreStart    
     }
+    // @codeCoverageIgnoreEnd
 }
