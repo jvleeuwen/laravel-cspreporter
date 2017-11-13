@@ -20,12 +20,19 @@
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">./src</directory>
-            <exclude>
+            <!-- <exclude>
                 <directory>./src/Facades</directory>
                 <file>./src/CspreporterServiceProvider.php</file>
-            </exclude>
+            </exclude> -->
         </whitelist>
     </filter>
+    <logging>
+        <log type="coverage-html" target="build/logs" charset="UTF-8" yui="true" highlight="true" lowUpperBound="35" highLowerBound="80" />
+        <log type="coverage-clover" target="build/logs/clover.xml"/>
+        <log type="coverage-php" target="build/logs/coverage.cov"/>
+        <log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false"/>
+
+    </logging>
     <php>
         <env name="APP_ENV" value="testing"/>
         <env name="CACHE_DRIVER" value="array"/>
