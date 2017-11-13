@@ -24,7 +24,8 @@
         "mockery/mockery": "~1.0",
         "phpunit/phpunit": "~6.0",
         "orchestra/testbench": "~3.5",
-        "php-coveralls/php-coveralls": "^1.0"
+        "php-coveralls/php-coveralls": "^1.0",
+        "codeclimate/php-test-reporter": "dev-master"
     },
     "autoload": {
         "classmap": [
