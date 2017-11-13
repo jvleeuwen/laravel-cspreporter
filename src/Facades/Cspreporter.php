@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Facade;
 
 class Cspreporter extends Facade
 {
-	protected static function getFacadeAccessor()
+    protected static function getFacadeAccessor()
     {
         return 'cspreporter.cspreporter';
     }
