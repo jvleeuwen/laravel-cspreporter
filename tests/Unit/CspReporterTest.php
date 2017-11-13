@@ -2,11 +2,11 @@
 
 namespace Jvleeuwen\Cspreporter\Tests\Unit;
 
+use Mockery;
 use Orchestra\Testbench\TestCase;
 use Jvleeuwen\Cspreporter\Cspreporter;
 use Illuminate\Support\ServiceProvider;
 use Jvleeuwen\Cspreporter\CspreporterServiceProvider;
-use Mockery;
 
 class CspReporterTest extends TestCase
 {
@@ -15,7 +15,6 @@ class CspReporterTest extends TestCase
      *
      * @return void
      */
-    
     protected $application_mock;
     protected $service_provider;
 
@@ -59,7 +58,7 @@ class CspReporterTest extends TestCase
     /** @test */
     public function it_can_not_parse_uri_feed()
     {
-        $this->assertSame("invalid XML",$this->feed->uri("i dont exist"));
+        $this->assertSame('invalid XML', $this->feed->uri('i dont exist'));
     }
 
     /** @test */
