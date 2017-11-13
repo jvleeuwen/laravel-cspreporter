@@ -17,7 +17,8 @@ script:
   - mkdir -p build/logs
   - ./vendor/bin/phpunit --coverage-clover build/logs/clover.xml
 
-# after_script:
+after_script:
+  - ./vendor/bin/test-reporter -v
 #  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
 after_success:
