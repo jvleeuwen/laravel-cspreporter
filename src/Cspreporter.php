@@ -22,8 +22,9 @@ class Cspreporter
 
             return 'invalid XML';
         }
-    // @codeCoverageIgnoreStart
+        // @codeCoverageIgnoreStart
     }
+
     // @codeCoverageIgnoreEnd
 
     public function file($filename)
@@ -67,7 +68,8 @@ class Cspreporter
 
             return $feedArray;
         }
-    // @codeCoverageIgnoreStart    
+        // @codeCoverageIgnoreStart
     }
+
     // @codeCoverageIgnoreEnd
 }
