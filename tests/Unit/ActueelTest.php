@@ -5,8 +5,6 @@ namespace Jvleeuwen\Cspreporter\Tests\Unit;
 use Orchestra\Testbench\TestCase;
 use Jvleeuwen\Cspreporter\Cspreporter;
 
-// use Illuminate\Foundation\Testing\RefreshDatabase;
-
 class ActueelTest extends TestCase
 {
     /**
@@ -14,12 +12,12 @@ class ActueelTest extends TestCase
      *
      * @return void
      */
+    
     public function setUp()
     {
         parent::setUp();
         $this->feed = new Cspreporter();
         $this->file = 'http://cspreporter.nl/rss/actueel/';
-        // $this->xml = $this->feed->file($this->file);
     }
 
     /** @test */
