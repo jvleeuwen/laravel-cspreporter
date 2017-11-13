@@ -19,6 +19,7 @@ class Cspreporter
             }
         } catch (\Exception $e) {
             Log::warning($e);
+
             return 'invalid XML';
         }
     // @codeCoverageIgnoreStart
@@ -63,6 +64,7 @@ class Cspreporter
                 ];
                 array_push($feedArray, $rssItem);
             }
+
             return $feedArray;
         }
     // @codeCoverageIgnoreStart    
