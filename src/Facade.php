@@ -2,7 +2,7 @@
 
 namespace Jvleeuwen\Cspreporter;
 
-class Cspreporter extends \Illuminate\Support\Facades\Facade
+class Facade extends \Illuminate\Support\Facades\Facade
 {
     protected static function getFacadeAccessor()
     {
