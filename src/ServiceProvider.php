@@ -2,18 +2,20 @@
 
 namespace Jvleeuwen\Cspreporter;
 
+use Jvleeuwen\Cspreporter\Cspreporter;
+
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     public function register()
     {
-        $this->app->singleton('cspreporter', function () {
-            return new Cspreporter($this->app);
-<<<<<<< HEAD
+        // $this->app->singleton('cspreporter', function () {
+        //     return new Cspreporter($this->app);
+
+        // });
+
+        $this->app->singleton(Cspreporter::class, function($app){
+            return new Cspreporter();
         });
-=======
-        }
-        );
->>>>>>> develop
 
         $this->app->alias('cspreporter', Cspreporter::class);
     }
