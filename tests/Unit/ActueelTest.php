@@ -12,7 +12,6 @@ class ActueelTest extends TestCase
      *
      * @return void
      */
-
     public function setUp()
     {
         parent::setUp();
@@ -59,6 +58,5 @@ class ActueelTest extends TestCase
     /** @test */
     public function it_returns_the_cspreporter_service()
     {
-        
     }
 }
