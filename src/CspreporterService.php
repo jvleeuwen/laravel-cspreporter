@@ -17,11 +17,12 @@ class CspreporterService
         try {
             $feed = simplexml_load_file($rssUri)->asXML();
             if ($feed) {
-                $feed =  $this->ParseRss(simplexml_load_string($feed));
+                $feed = $this->ParseRss(simplexml_load_string($feed));
             }
         } catch (\Exception $e) {
             return 'invalid XML';
         }
+
         return $feed;
     }
 
