@@ -22,5 +22,5 @@ after_script:
 #  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
 after_success:
-- ./vendor/bin/test-reporter -v
 - travis_retry php vendor/bin/coveralls -v
+- ./vendor/bin/test-reporter -v
