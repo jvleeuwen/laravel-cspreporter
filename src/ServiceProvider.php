@@ -8,8 +8,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     {
         $this->app->singleton('cspreporter', function () {
             return new Cspreporter($this->app);
-        }
-        );
+        });
 
         $this->app->alias('cspreporter', Cspreporter::class);
     }
