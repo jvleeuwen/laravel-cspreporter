@@ -6,6 +6,6 @@ class Cspreporter extends \Illuminate\Support\Facades\Facade
 {
     protected static function getFacadeAccessor()
     {
-        return Cspreporter::class;
+        return 'cspreporter';
     }
 }
