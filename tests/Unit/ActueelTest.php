@@ -2,10 +2,7 @@
 
 namespace Jvleeuwen\Cspreporter\Tests\Unit;
 
-use Mockery;
 use PHPUnit\Framework\TestCase;
-use Jvleeuwen\Cspreporter\CspreporterFacade;
-use Jvleeuwen\Cspreporter\CspreporterServiceProvider;
 use Jvleeuwen\Cspreporter\CspreporterService as cspreporter;
 
 class ActueelTest extends TestCase
@@ -58,4 +55,3 @@ class ActueelTest extends TestCase
         $this->assertSame('u have reached the test function', $this->cspreporter->test());
     }
 }
-

@@ -37,8 +37,7 @@ class CspreporterService
     public function ParseRss($feed)
     {
         $feedArray = [];
-        if (isset($feed->channel))
-        {
+        if (isset($feed->channel)) {
             /* channel props:
             $channelTitel = (string)$feed->channel->title;
             $channelDebug = (string)$feed->channel->debug;
@@ -66,6 +65,7 @@ class CspreporterService
                 array_push($feedArray, $rssItem);
             }
         }
+
         return $feedArray;
     }
 }
