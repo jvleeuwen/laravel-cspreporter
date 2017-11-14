@@ -4,7 +4,7 @@ namespace Jvleeuwen\Cspreporter;
 
 use Illuminate\Support\Facades\Log;
 
-class Cspreporter
+class CspreporterService
 {
     protected $rssUri;
     protected $feed;
