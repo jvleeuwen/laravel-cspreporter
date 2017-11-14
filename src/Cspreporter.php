@@ -13,7 +13,7 @@ class Cspreporter
     {
         return 'whahahahahhaa';
     }
-    
+
     public function uri($rssUri)
     {
         // Gets the RSS from the $rssUri
