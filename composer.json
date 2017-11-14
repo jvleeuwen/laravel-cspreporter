@@ -40,10 +40,10 @@
             "dont-discover": [
             ],
             "providers": [
-                "Jvleeuwen\\Cspreporter\\ServiceProvider"
+                "Jvleeuwen\\Cspreporter\\CspreporterServiceProvider"
             ],
             "aliases": {
-                "cspreporter": "Jvleeuwen\\Cspreporter\\Facade"
+                "cspreporter": "Jvleeuwen\\Cspreporter\\CspreporterFacade"
             }
         }
     }
