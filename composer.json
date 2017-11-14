@@ -43,7 +43,7 @@
                 "Jvleeuwen\\Cspreporter\\ServiceProvider"
             ],
             "aliases": {
-                "Cspreporter": "Jvleeuwen\\Cspreporter\\Facade"
+                "cspreporter": "Jvleeuwen\\Cspreporter\\Facade"
             }
         }
     }

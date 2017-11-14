@@ -9,6 +9,10 @@ class Cspreporter
     protected $rssUri;
     protected $feed;
 
+    public function test ()
+    {
+        return 'whahahahahhaa';
+    }
     public function uri($rssUri)
     {
         // Gets the RSS from the $rssUri
