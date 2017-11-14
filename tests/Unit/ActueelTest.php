@@ -51,13 +51,6 @@ class ActueelTest extends TestCase
         $this->assertSame('invalid XML', $this->cspreporter->uri('i dont exist'));
     }
 
-
-
-
-
-
-
-
     // public function testUpdateOrInsertRssItemInToDatabase()
     // {
     //  $this->markTestIncomplete('This test has not been implemented yet.');
