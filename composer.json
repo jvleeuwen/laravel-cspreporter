@@ -1,5 +1,5 @@
 {
-    "name": "Jvleeuwen/Cspreporter",
+    "name": "jvleeuwen/cspreporter",
     "description": "Cspreporter.nl intergration in laravel.",
     "keywords": ["package", "laravel", "cspreporter", "cspreporter.nl", "rss", "routit"],
     "license": "MIT",
