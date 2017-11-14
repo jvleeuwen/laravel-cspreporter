@@ -54,9 +54,4 @@ class ActueelTest extends TestCase
     {
         $this->assertSame('u have reached the test function', $this->cspreporter->test());
     }
-
-    /** @test */
-    public function it_returns_the_cspreporter_service()
-    {
-    }
 }
