@@ -1,6 +1,6 @@
 Master:  
 [![Build Status](https://travis-ci.org/jvleeuwen/laravel-cspreporter.svg?branch=master)](https://travis-ci.org/jvleeuwen/laravel-cspreporter)
-[![Coverage Status](https://coveralls.io/repos/github/jvleeuwen/laravel-cspreporter/badge.svg?branch=master)](https://coveralls.io/github/jvleeuwen/laravel-cspreporter?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/jvleeuwen/laravel-cspreporter/badge.svg?branch=master)](https://coveralls.io/github/jvleeuwen/laravel-cspreporter?branch=master&service=github)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7e8802ad60fcb229055d/maintainability)](https://codeclimate.com/github/jvleeuwen/laravel-cspreporter/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/7e8802ad60fcb229055d/test_coverage)](https://codeclimate.com/github/jvleeuwen/laravel-cspreporter/test_coverage)
 [![StyleCI](https://styleci.io/repos/110119154/shield?branch=master)](https://styleci.io/repos/110119154)
@@ -8,7 +8,7 @@ Master:
 
 Develop:  
 [![Build Status](https://travis-ci.org/jvleeuwen/laravel-cspreporter.svg?branch=develop)](https://travis-ci.org/jvleeuwen/laravel-cspreporter)
-[![Coverage Status](https://coveralls.io/repos/github/jvleeuwen/laravel-cspreporter/badge.svg?branch=develop)](https://coveralls.io/github/jvleeuwen/laravel-cspreporter?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/jvleeuwen/laravel-cspreporter/badge.svg?branch=develop)](https://coveralls.io/github/jvleeuwen/laravel-cspreporter?branch=develop&service=github)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7e8802ad60fcb229055d/maintainability)](https://codeclimate.com/github/jvleeuwen/laravel-cspreporter/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/7e8802ad60fcb229055d/test_coverage)](https://codeclimate.com/github/jvleeuwen/laravel-cspreporter/test_coverage)
 [![StyleCI](https://styleci.io/repos/110119154/shield?branch=develop)](https://styleci.io/repos/110119154)
