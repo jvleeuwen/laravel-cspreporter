@@ -2,7 +2,7 @@
 
 namespace Jvleeuwen\Cspreporter;
 
-use Illuminate\Support\Facades\Log;
+// use Illuminate\Support\Facades\Log;
 
 class CspreporterService
 {
@@ -23,8 +23,7 @@ class CspreporterService
                 return $this->ParseRss(simplexml_load_string($feed));
             }
         } catch (\Exception $e) {
-            Log::warning($e);
-
+            // Log::warning($e);
             return 'invalid XML';
         }
         // @codeCoverageIgnoreStart
