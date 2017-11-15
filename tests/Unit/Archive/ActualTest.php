@@ -2,11 +2,11 @@
 
 namespace Jvleeuwen\Cspreporter\tests;
 
+use Mockery;
+use cspreporter;
 use Orchestra\Testbench\TestCase;
 use Jvleeuwen\Cspreporter\CspreporterFacade;
 use Jvleeuwen\Cspreporter\CspreporterServiceProvider;
-use Mockery;
-Use cspreporter;
 
 class ActualTest extends TestCase
 {
@@ -49,8 +49,8 @@ class ActualTest extends TestCase
     }
 
     /**
-    * @test
-    */
+     * @test
+     */
     public function it_registers_the_service()
     {
         $concrete = $this->app->make('Jvleeuwen\Cspreporter\CspreporterFacade');
@@ -58,8 +58,8 @@ class ActualTest extends TestCase
     }
 
     /**
-    * @test
-    */
+     * @test
+     */
     public function it_provides_cspreporter()
     {
         $this->assertInternalType('array', $this->service_provider->provides());
@@ -67,8 +67,8 @@ class ActualTest extends TestCase
     }
 
     /**
-    * @test
-    */
+     * @test
+     */
     public function it_can_reached_the_test_function()
     {
         $this->assertSame(cspreporter::test(), 'u have reached the test function');
@@ -95,7 +95,7 @@ class ActualTest extends TestCase
      */
     public function it_can_parse_rss()
     {
-        $this->assertInternalType('array',cspreporter::ParseRss(cspreporter::file($this->file)));
+        $this->assertInternalType('array', cspreporter::ParseRss(cspreporter::file($this->file)));
     }
 
     /**
