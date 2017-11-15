@@ -11,8 +11,6 @@ class CspreporterServiceProvider extends ServiceProvider
         $this->app->singleton('cspreporter', function () {
             return new CspreporterService;
         });
-
-        // $this->app->alias('cspreporter', Cspreporter::class);
     }
 
     /**
