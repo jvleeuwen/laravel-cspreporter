@@ -54,13 +54,13 @@ class CspreporterService
             foreach ($feed->channel->item as $item) {
                 $rssItem = [
                     // 'id' 			=> $item->attributes()->id,
-                    'title' 		=> $item->title,
-                    'description'	=> $item->description,
-                    'pubDate'		=> $item->pubDate,
-                    'startDate'		=> $item->startDate,
-                    'endDate'		=> $item->endDate,
-                    'category'		=> $item->category,
-                    'link'			=> $item->link,
+                    'title' 		=> (string)$item->title,
+                    'description'	=> (string)$item->description,
+                    'pubDate'		=> (string)$item->pubDate,
+                    'startDate'		=> (string)$item->startDate,
+                    'endDate'		=> (string)$item->endDate,
+                    'category'		=> (string)$item->category,
+                    'link'			=> (string)$item->link,
                 ];
                 array_push($feedArray, $rssItem);
             }
