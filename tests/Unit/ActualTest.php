@@ -6,7 +6,7 @@ use Orchestra\Testbench\TestCase;
 use Jvleeuwen\Cspreporter\CspreporterFacade;
 use Jvleeuwen\Cspreporter\CspreporterServiceProvider;
 use Mockery;
-Use cspreporter;
+use cspreporter;
 
 class ActualTest extends TestCase
 {
@@ -95,7 +95,24 @@ class ActualTest extends TestCase
      */
     public function it_can_parse_rss()
     {
-        $this->assertInternalType('array',cspreporter::ParseRss(cspreporter::file($this->file)));
+        $this->assertInternalType('array', cspreporter::ParseRss(cspreporter::file($this->file)));
+    }
+
+    /**
+     * @test
+     */
+    public function it_can_parse_all_feed_item_fields()
+    {
+        $feed = cspreporter::uri($this->file);
+        foreach ($feed as $item) {
+            $this->assertInternalType('string', $item['title']);
+            $this->assertInternalType('string', $item['description']);
+            $this->assertInternalType('string', $item['pubDate']);
+            $this->assertInternalType('string', $item['startDate']);
+            $this->assertInternalType('string', $item['endDate']);
+            $this->assertInternalType('string', $item['category']);
+            $this->assertInternalType('string', $item['link']);
+        }
     }
 
     /**
