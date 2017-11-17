@@ -7,14 +7,6 @@ use cspreporter;
 use Orchestra\Testbench\TestCase;
 use Jvleeuwen\Cspreporter\CspreporterFacade;
 use Jvleeuwen\Cspreporter\CspreporterServiceProvider;
-<<<<<<< HEAD:tests/Unit/Archive/ActualTest.php
-=======
-<<<<<<< HEAD:tests/Unit/ActualTest.php
-use Mockery;
-use cspreporter;
-=======
->>>>>>> d574d2434520677e6379e11416a966c062cd5a44:tests/Unit/Archive/ActualTest.php
->>>>>>> master:tests/Unit/ActualTest.php
 
 class ActualTest extends TestCase
 {
