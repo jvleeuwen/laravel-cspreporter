@@ -2,11 +2,16 @@
 
 namespace Jvleeuwen\Cspreporter\tests;
 
+use Mockery;
+use cspreporter;
 use Orchestra\Testbench\TestCase;
 use Jvleeuwen\Cspreporter\CspreporterFacade;
 use Jvleeuwen\Cspreporter\CspreporterServiceProvider;
+<<<<<<< HEAD:tests/Unit/ActualTest.php
 use Mockery;
 use cspreporter;
+=======
+>>>>>>> d574d2434520677e6379e11416a966c062cd5a44:tests/Unit/Archive/ActualTest.php
 
 class ActualTest extends TestCase
 {
@@ -49,8 +54,8 @@ class ActualTest extends TestCase
     }
 
     /**
-    * @test
-    */
+     * @test
+     */
     public function it_registers_the_service()
     {
         $concrete = $this->app->make('Jvleeuwen\Cspreporter\CspreporterFacade');
@@ -58,8 +63,8 @@ class ActualTest extends TestCase
     }
 
     /**
-    * @test
-    */
+     * @test
+     */
     public function it_provides_cspreporter()
     {
         $this->assertInternalType('array', $this->service_provider->provides());
@@ -67,8 +72,8 @@ class ActualTest extends TestCase
     }
 
     /**
-    * @test
-    */
+     * @test
+     */
     public function it_can_reached_the_test_function()
     {
         $this->assertSame(cspreporter::test(), 'u have reached the test function');
