@@ -53,7 +53,7 @@ class CspreporterService
             */
             foreach ($feed->channel->item as $item) {
                 $rssItem = [
-                    // 'id' 			=> $item->attributes()->id,
+                    'id' 			=> (integer) $item->attributes()->id,
                     'title' 		=> (string) $item->title,
                     'description'	=> (string) $item->description,
                     'pubDate'		=> (string) $item->pubDate,

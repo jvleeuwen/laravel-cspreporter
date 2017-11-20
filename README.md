@@ -35,6 +35,7 @@ $array = cspreporter::uri({{config('cspreporter.uri').config('cspreporter.actuee
 ## Returned array contents:
 ```php
 $array = [
+    'id'    		=> (integer) $item->attributes()->id,
     'title' 		=> (string) $item->title,
     'description'	=> (string) $item->description,
     'pubDate'		=> (string) $item->pubDate,
