@@ -6,8 +6,7 @@ use Illuminate\Support\ServiceProvider;
 
 class CspreporterServiceProvider extends ServiceProvider
 {
-
-    public function boot(param)
+    public function boot()
     {
         $this->publishes([__DIR__.'/../config/cspreporter.php' => config_path('cspreporter.php')], 'config');
     }
