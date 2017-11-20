@@ -2,7 +2,7 @@
 
 return [
     'uri' => env('CSPREPORTER_URI', 'https://cspreporter.nl/rss/'),
-    'Werkzaamheden' => env('CSPREPORTER_WERKZAAMHEDEN', 'werkzaamheden/'),
-    'Storingen' => env('CSPREPORTER_STORINGEN', 'storingen/'),
-    'Actueel' => env('CSPREPORTER_ACTUEEL', 'actueel/'),
+    'werkzaamheden' => env('CSPREPORTER_WERKZAAMHEDEN', 'werkzaamheden/'),
+    'storingen' => env('CSPREPORTER_STORINGEN', 'storingen/'),
+    'actueel' => env('CSPREPORTER_ACTUEEL', 'actueel/'),
 ];
