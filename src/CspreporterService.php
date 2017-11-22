@@ -15,7 +15,7 @@ class CspreporterService
     public function uri($rssUri)
     {
         try {
-            $feed = simplexml_load_file($rssUri)->asXML();
+            $feed = simplexml_load_file($rssUri, 'SimpleXMLElement', LIBXML_NOCDATA)->asXML();
             if ($feed) {
                 $feed = $this->ParseRss(simplexml_load_string($feed));
             }
@@ -62,6 +62,7 @@ class CspreporterService
                     'category'		=> (string) $item->category,
                     'link'			=> (string) $item->link,
                 ];
+                $rssItem['services'] = array_collapse((array)$item->services);
                 array_push($feedArray, $rssItem);
             }
         }

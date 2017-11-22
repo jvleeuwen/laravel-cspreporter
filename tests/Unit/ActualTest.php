@@ -105,6 +105,7 @@ class ActualTest extends TestCase
     {
         $feed = cspreporter::uri($this->file);
         foreach ($feed as $item) {
+            $this->assertInternalType('integer', $item['id']);
             $this->assertInternalType('string', $item['title']);
             $this->assertInternalType('string', $item['description']);
             $this->assertInternalType('string', $item['pubDate']);
