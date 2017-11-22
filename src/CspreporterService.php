@@ -62,7 +62,7 @@ class CspreporterService
                     'category'		=> (string) $item->category,
                     'link'			=> (string) $item->link,
                 ];
-                $rssItem['services'] = array_collapse((array)$item->services);
+                $rssItem['services'] = array_collapse((array) $item->services);
                 array_push($feedArray, $rssItem);
             }
         }
